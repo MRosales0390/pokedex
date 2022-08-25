@@ -5,9 +5,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #2a2a2a;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-logo {
+	display: flex;
+	justify-content: center;
+	padding: 2rem 0; /*Up and down*/
+}
+
+.pokemon-list {
+	/*display: flex;
+	
+	flex-direction: row;
+	flex-wrap: wrap;*/
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 2rem;
+	gap: 2em;
+}
+
+.pokemon-card {
+	background-color: #121212;
+	/*width: 23%;*/
+	width: auto;
+	display: flex;
+	flex-direction: column;	
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	padding: 2em;
+}
+
+.pokemon-card img {
+	height: 200px;
+	background-position: center;
+	overflow: hidden;
+}
+
+.pokemon-card p {
+	color:white;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
