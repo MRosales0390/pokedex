@@ -9,10 +9,10 @@ export default function PokemonCard(props){
         fetch(props.url)
         .then(response => response.json())
         .then(json => setPokemon(json))
-    }, [])
+    }, [props.url])
 
     return(
-        <article className='pokemon-card'>
+        <article className='pokemon-card' onClick={props.onClick}>
             <header>
                 <img 
                     src={pokemon?.sprites?.front_default} 
